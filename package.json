@@ -1,0 +1,25 @@
+{
+  "name": "use-local-typescript-lib",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "echo \"lint\" && eslint 'src/**' --fix && echo \"tsc\" && tsc",
+    "execute-npx": "typescript-lib-for-npx"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "devDependencies": {
+    "@types/node": "^16.7.1",
+    "@types/typescript-lib-for-npx": "file:../typescript-lib-for-npx",
+    "@typescript-eslint/eslint-plugin": "^4.29.3",
+    "@typescript-eslint/parser": "^4.29.3",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "prettier": "^2.3.2",
+    "ts-node": "^10.2.1",
+    "typescript": "4.3.5"
+  },
+  "dependencies": {
+    "typescript-lib-for-npx": "file:../typescript-lib-for-npx"
+  }
+}
